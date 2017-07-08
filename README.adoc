@@ -3,12 +3,21 @@
 :inbox: https://www.google.com/inbox/[Google Inbox]
 :gmail: https://www.google.com/gmail/[GMail]
 :streak: https://www.streak.com/[Streak]
+:tampermonkey: https://tampermonkey.net/[TamperMonkey]
+:repo: CodeLenny/direct-gmail
+:version: master
+:script: direct-gmail
+:experimental:
+:install: https://raw.githubusercontent.com/{repo}/{version}/{script}.user.js[{script}.user.js]
+:toc: preamble
 
 Want to use {inbox} for most things, but still need to use the old {gmail} interface, such as for {gmail} plugins like
 {streak}?
 
 With {name} extension, you can leave the automated {gmail}->{inbox} redirect in place, but quickly get a hotlink back
 into the old interface.
+
+== Streak Example
 
 image::docs/streak-box.png[]
 
@@ -30,3 +39,24 @@ Please note that many extensions take a few moments to load themselves and act u
 may modify the URL, potentially removing the `box` snippet.  Even so, some plugins may be able to cope with this change.
 For {streak}, the inbox will be shown for 15-20 seconds, but then the box linked will load,
 and the URL will change back.
+
+== Installation
+
+1. Install {tampermonkey} in your browser.
+2. Visit {install}.  {tampermonkey} should prompt you to install the script.
+
+The script is configured to automatically update itself when new versions are released.
+You may want to update the update interval in the {tampermonkey} settings to get updates quicker
+- by default, scripts are only updated every few weeks.
+
+Adjust the update period inside the TamperMonkey dashboard under
+menu:Dashboard[Settings > Script Update > Check Interval].
+
+image::docs/check-interval.png[TamperMonkey Check Interval Setting]
+
+== Usage
+
+After visiting `mail.google.com`, select the {tampermonkey} icon in the browser menu.
+Choose "Get Direct Link to GMail" in the menu that pops up.
+
+image::docs/tampermonkey-menu.png[TamperMonkey Menu with "Direct Gmail" button]
