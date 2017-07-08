@@ -1,0 +1,21 @@
+{
+  "name": "direct-gmail",
+  "scriptName": "Direct GMail Link",
+  "version": "0.0.0",
+  "description": "Direct link to Gmail",
+  "main": "direct-gmail.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeLenny/direct-gmail.git"
+  },
+  "author": "Ryan Leonard (http://ryanleonard.us)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeLenny/direct-gmail/issues"
+  },
+  "homepage": "https://github.com/CodeLenny/direct-gmail#readme"
+}
